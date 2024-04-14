@@ -2,7 +2,8 @@ function binarySearch(list, target) {
   let low = 0;
   let high = list.length - 1;
   while (low <= high) {
-    let mid = Math.floor((low + high) / 2);
+    // let mid = Math.floor((low + high) / 2); // this can cause overflow
+    let mid = Math.floor(low + (high - low) / 2); // to avoid overflow
     if (list[mid] === target) {
       return mid;
     } else if (list[mid] < target) {
