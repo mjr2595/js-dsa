@@ -20,6 +20,7 @@ console.log(maxSubarraySumNaive([1, 2, 5, 2, 8, 1, 5], 2)); // 10
 console.log(maxSubarraySumNaive([1, 2, 5, 2, 8, 1, 5], 4)); // 17
 console.log(maxSubarraySumNaive([4, 2, 1, 6], 1)); // 6
 console.log(maxSubarraySumNaive([4, 2, 1, 6, 2], 4)); // 13
+console.log(maxSubarraySumNaive([], 4)); // null
 
 // sliding window approach
 // time complexity: O(n)
@@ -51,3 +52,4 @@ console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2)); // 10
 console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 4)); // 17
 console.log(maxSubarraySum([4, 2, 1, 6], 1)); // 6
 console.log(maxSubarraySum([4, 2, 1, 6, 2], 4)); // 13
+console.log(maxSubarraySum([], 4)); // null
