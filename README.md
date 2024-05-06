@@ -4,6 +4,7 @@ This is a collection of JavaScript data structures, algorithms, and interview pr
 
 Courses and resources include:
 
-- [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/)
-- [JavaScript Data Structures](https://www.udemy.com/course/data-structures-algorithms-javascript/)
-- [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/)
+- [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/) (Colt Steele, Udemy)
+- [JavaScript Data Structures](https://www.udemy.com/course/data-structures-algorithms-javascript/) (Scott Barrett, Udemy)
+- [Interviewing for Front-End Engineers](https://frontendmasters.com/courses/interviewing-frontend/) (Jem Young, Frontend Masters)
+- [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/) (ThePrimeagen, Frontend Masters)

@@ -1,14 +1,13 @@
+// Without using .flat(), create a function to flatten an array
+
 function flatten(arr) {
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (Array.isArray(arr[i])) {
-      // hit an array, recursively flatten it and then push each item to the result
-      result = result.concat(flatten(arr[i]));
+  return arr.reduce((acc, item) => {
+    if (Array.isArray(item)) {
+      return acc.concat(flatten(item));
     } else {
-      result.push(arr[i]);
+      return acc.concat(item);
     }
-  }
-  return result;
+  }, []);
 }
 
 console.log(flatten([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
