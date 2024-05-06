@@ -11,8 +11,18 @@ function flatten(arr) {
   return result;
 }
 
-console.log(flatten([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
-console.log(flatten([1, [2, [3, 4], [[5]]]])); // [1, 2, 3, 4, 5]
-console.log(flatten([[1], [2], [3]])); // [1, 2, 3]
-console.log(flatten([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]])); // [1, 2, 3]
-console.log(flatten([[[[], [[[]]], [[[[[[[]]]]]]]]]])); // []
+console.log(flattenWithReduce([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
+console.log(flattenWithReduce([1, [2, [3, 4], [[5]]]])); // [1, 2, 3, 4, 5]
+console.log(flattenWithReduce([[1], [2], [3]])); // [1, 2, 3]
+console.log(flattenWithReduce([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]])); // [1, 2, 3]
+console.log(flattenWithReduce([[[[], [[[]]], [[[[[[[]]]]]]]]]])); // []
+
+function flattenWithReduce(arr) {
+  return arr.reduce((acc, item) => {
+    if (Array.isArray(item)) {
+      return acc.concat(flattenWithReduce(item));
+    } else {
+      return acc.concat(item);
+    }
+  }, []);
+}
